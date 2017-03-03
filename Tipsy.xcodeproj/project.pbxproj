@@ -12,6 +12,7 @@
 		001FB0FF1E689EE2007AFEBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001FB0FD1E689EE2007AFEBE /* Main.storyboard */; };
 		001FB1011E689EE2007AFEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001FB1001E689EE2007AFEBE /* Assets.xcassets */; };
 		001FB1041E689EE2007AFEBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001FB1021E689EE2007AFEBE /* LaunchScreen.storyboard */; };
+		00E2478F1E691AD2004932B3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2478E1E691AD2004932B3 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		001FB1001E689EE2007AFEBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001FB1031E689EE2007AFEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001FB1051E689EE2007AFEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E2478E1E691AD2004932B3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				001FB0F91E689EE2007AFEBE /* AppDelegate.swift */,
 				001FB0FB1E689EE2007AFEBE /* ViewController.swift */,
+				00E2478E1E691AD2004932B3 /* SettingsViewController.swift */,
 				001FB0FD1E689EE2007AFEBE /* Main.storyboard */,
 				001FB1001E689EE2007AFEBE /* Assets.xcassets */,
 				001FB1021E689EE2007AFEBE /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				001FB0FC1E689EE2007AFEBE /* ViewController.swift in Sources */,
 				001FB0FA1E689EE2007AFEBE /* AppDelegate.swift in Sources */,
+				00E2478F1E691AD2004932B3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +304,7 @@
 				001FB10A1E689EE2007AFEBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
