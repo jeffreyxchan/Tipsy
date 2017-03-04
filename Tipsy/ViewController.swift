@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourWay: UILabel!
     @IBOutlet weak var fiveWay: UILabel!
     @IBOutlet weak var price: UITextField!
+    @IBOutlet weak var tipView: UIView!
     
     override func viewDidLoad() {
         price.becomeFirstResponder()
@@ -26,6 +27,11 @@ class ViewController: UIViewController {
         let initialTipChoiceIndex = defaults.integer(forKey: "3171")
         tipChoice.selectedSegmentIndex = initialTipChoiceIndex
         calculate(Any.self)
+        
+        self.tipView.alpha = 0
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
     }
     
     @IBAction func onTap(_ sender: Any) {
@@ -41,6 +47,16 @@ class ViewController: UIViewController {
         let bill = Double(price.text!) ?? 0
         let tipValue = bill * percentages[tipChoice.selectedSegmentIndex]
         let total = bill + tipValue
+        
+        if price.text == "" {
+            UIView.animate(withDuration: 0.4, animations: {
+                self.tipView.alpha = 0
+            })
+        } else {
+            UIView.animate(withDuration: 0.4, animations: {
+                self.tipView.alpha = 1
+            })
+        }
         
         tip.text! = String(format: "$%.2f", tipValue)
         twoWay.text! = String(format: "$%.2f", total/2)
