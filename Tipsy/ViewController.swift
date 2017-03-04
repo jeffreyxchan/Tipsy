@@ -17,6 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var fiveWay: UILabel!
     @IBOutlet weak var price: UITextField!
     
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard
+        let initialTipChoiceIndex = defaults.integer(forKey: "3171")
+        tipChoice.selectedSegmentIndex = initialTipChoiceIndex
+        calculate(Any.self)
+    }
+    
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }

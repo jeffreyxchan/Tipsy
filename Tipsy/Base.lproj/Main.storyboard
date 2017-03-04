@@ -33,6 +33,7 @@
                                             <segment title="18%"/>
                                             <segment title="20%"/>
                                         </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="onChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="FqE-Rj-GJm"/>
                                         </connections>
@@ -50,7 +51,8 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1944264174" green="0.57371117039999997" blue="1" alpha="0.43034771129999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="Iq5-O6-bzA"/>
                                     <constraint firstItem="bQf-dB-ckz" firstAttribute="leading" secondItem="43D-sZ-Wyh" secondAttribute="leading" constant="8" id="Stx-LP-WFe"/>
@@ -125,13 +127,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.11332537954272015" green="0.27494535941562703" blue="0.56773548549844555" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.11332537954272015" green="0.27494535941562703" blue="0.56773548549844555" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="433" id="sGK-9w-iL4"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.17681966249456893" green="0.47426059460461623" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="43D-sZ-Wyh" secondAttribute="trailing" id="4gf-Bb-XBI"/>
@@ -148,7 +150,7 @@
                     <navigationItem key="navigationItem" title="Tipsy" id="l5g-Jm-hbQ">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Hhg-3r-HtX">
                             <connections>
-                                <segue destination="zCY-pz-56q" kind="push" id="RYt-L6-QGt"/>
+                                <segue destination="zCY-pz-56q" kind="show" id="9le-Xb-bgr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -174,7 +176,7 @@
         <!--Settings-->
         <scene sceneID="DKX-r1-KTw">
             <objects>
-                <viewController id="zCY-pz-56q" sceneMemberID="viewController">
+                <viewController id="zCY-pz-56q" customClass="SettingsViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YlY-6N-Nbx"/>
                         <viewControllerLayoutGuide type="bottom" id="HPa-oX-yeJ"/>
@@ -203,15 +205,18 @@
                                             <segment title="20%"/>
                                         </segments>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="onChange:" destination="zCY-pz-56q" eventType="valueChanged" id="gce-AG-hJg"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1133253795" green="0.27494535939999998" blue="0.56773548549999997" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.1133253795" green="0.27494535939999998" blue="0.56773548549999997" alpha="0.75" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="603" id="3S0-hF-3Ls"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="tJM-O8-VqI" secondAttribute="trailing" id="FJc-cV-OMb"/>
                             <constraint firstItem="HPa-oX-yeJ" firstAttribute="top" secondItem="tJM-O8-VqI" secondAttribute="bottom" id="jhy-3a-nGL"/>
@@ -220,6 +225,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="KPA-3r-oZB"/>
+                    <connections>
+                        <outlet property="tipSelect" destination="s47-Eo-YBu" id="h6w-rD-N5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xet-bD-ZS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
