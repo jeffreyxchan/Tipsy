@@ -35,7 +35,7 @@
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="onChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="FqE-Rj-GJm"/>
+                                            <action selector="onTipChoiceChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z3D-I4-QqF"/>
                                         </connections>
                                     </segmentedControl>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="70" translatesAutoresizingMaskIntoConstraints="NO" id="bQf-dB-ckz">
@@ -160,7 +160,7 @@
                         <outlet property="price" destination="bQf-dB-ckz" id="wue-wc-yhh"/>
                         <outlet property="threeWay" destination="aBa-4Q-7md" id="xFQ-Sk-57a"/>
                         <outlet property="tip" destination="Xzo-9g-gT0" id="rEw-Xy-euN"/>
-                        <outlet property="tipChoice" destination="JHs-BS-Yai" id="fPG-0d-wfc"/>
+                        <outlet property="tipChoice" destination="JHs-BS-Yai" id="605-Xz-dwy"/>
                         <outlet property="twoWay" destination="v1X-L9-Zzk" id="0nZ-rq-eZC"/>
                     </connections>
                 </viewController>

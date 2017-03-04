@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var fiveWay: UILabel!
     @IBOutlet weak var price: UITextField!
     
+    override func viewDidLoad() {
+        price.becomeFirstResponder()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
         let initialTipChoiceIndex = defaults.integer(forKey: "3171")
@@ -28,7 +32,7 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    @IBAction func onChange(_ sender: Any) {
+    @IBAction func onTipChoiceChange(_ sender: Any) {
         calculate(Any.self)
     }
     
