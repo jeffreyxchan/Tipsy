@@ -26,12 +26,10 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         let initialTipChoiceIndex = defaults.integer(forKey: "3171")
         tipChoice.selectedSegmentIndex = initialTipChoiceIndex
-        calculate(Any.self)
         
         self.tipView.alpha = 0
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        
+        calculate(Any.self)
     }
     
     @IBAction func onTap(_ sender: Any) {
